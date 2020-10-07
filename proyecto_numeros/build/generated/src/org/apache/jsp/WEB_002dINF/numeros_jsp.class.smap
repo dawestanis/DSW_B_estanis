@@ -1,0 +1,17 @@
+SMAP
+numeros_jsp.java
+JSP
+*S JSP
+*F
++ 0 numeros.jsp
+WEB-INF/numeros.jsp
+*L
+5,8:44
+12,9:52
+21,2:62
+22:64
+23:65,3
+24:68
+25,2:70
+26,5:72
+*E

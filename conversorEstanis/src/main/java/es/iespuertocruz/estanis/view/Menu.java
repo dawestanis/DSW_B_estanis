@@ -30,12 +30,13 @@ public class Menu {
                     System.out.println("Has elegido pasar de Euros a Dolares. Introduce la cantidad:\n");
                     numero = sc.nextDouble();
                     System.out.println(Convertir.euroDolar(numero));
-                    
+                    salir = true;
                     break;
                 case 2:
                     System.out.println("Has elegido pasar de Dolares a Euros. Introduce la cantidad:\n");
                     numero = sc.nextDouble();
                     System.out.println(Convertir.dolarEuro(numero));
+                    salir = true;
                     break;
                 case 3:
                     salir = true;

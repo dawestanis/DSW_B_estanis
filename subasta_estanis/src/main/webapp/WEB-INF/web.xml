@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC
+"-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+"http://java.sun.com/j2ee/dtds/web-app_2_3.dtd">
+<web-app>
+    <display-name>Aplicacion de Subastas</display-name>
+    <description>
+        Aplicacion de Subastas con Servlets
+    </description>
+    <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+        <servlet>
+            <servlet-name>ServletRegistro</servlet-name>
+            <servlet-class>es.iespuertocruz.estanis.controller.ServletRegistro</servlet-class>
+        </servlet>
+        <servlet>
+            <servlet-name>ServletLogin</servlet-name>
+            <servlet-class>es.iespuertocruz.estanis.controller.ServletLogin</servlet-class>
+        </servlet>
+        <servlet>
+            <servlet-name>ServletVender</servlet-name>
+            <servlet-class>es.iespuertocruz.estanis.controller.ServletVender</servlet-class>
+        </servlet>
+        <servlet>
+            <servlet-name>ServletComprar</servlet-name>
+            <servlet-class>es.iespuertocruz.estanis.controller.ServletComprar</servlet-class>
+        </servlet>
+        <servlet>
+            <servlet-name>ServletMain</servlet-name>
+            <servlet-class>es.iespuertocruz.estanis.controller.ServletMain</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>ServletRegistro</servlet-name>
+            <url-pattern>/registro</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+            <servlet-name>ServletLogin</servlet-name>
+            <url-pattern>/login</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+            <servlet-name>ServletVender</servlet-name>
+            <url-pattern>/vender</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+            <servlet-name>ServletComprar</servlet-name>
+            <url-pattern>/comprar</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+            <servlet-name>ServletMain</servlet-name>
+            <url-pattern>/main</url-pattern>
+        </servlet-mapping>
+        <servlet-mapping>
+            <servlet-name>slogin</servlet-name>
+            <url-pattern>/*</url-pattern>
+        </servlet-mapping>
+        <session-config>
+            <session-timeout>
+                30
+            </session-timeout>
+        </session-config>
+    </web-app>
